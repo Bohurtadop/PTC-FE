@@ -1,0 +1,319 @@
+.Content {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    background-color: darkcyan;
+    flex-direction: column;
+}
+
+.Questions-content {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    background-color: teal;
+    flex-direction: column;
+}
+
+.Header-image {
+    min-width: 50px;
+    max-width: 150px;
+    width: 8vw;
+    margin-bottom: 1vh;
+}
+
+.Question-container {
+    background-color: white;
+    color: darkslategray;
+    min-width: 300px;
+    width: 65vw;
+    height: 45vh;
+    min-height: 300px;
+    border-radius: 2vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Range-question-container {
+    background-color: white;
+    color: darkslategray;
+    min-width: 300px;
+    width: 65vw;
+    height: 45vh;
+    min-height: 300px;
+    border-radius: 2vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.Question {
+    margin: 0.5em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.Option-image {
+    width: 10vw;
+    min-width: 40px;
+    max-width: 120px;
+    margin: 0.25em;
+    cursor: pointer;
+    border-style: outset;
+    border-radius: 100vh;
+}
+
+.Chosen-image {
+    width: 10vw;
+    min-width: 40px;
+    max-width: 120px;
+    margin: 0.25em;
+    border-style: outset;
+    border-radius: 100vh;
+}
+
+.Alert {
+    background-color: aquamarine;
+    border-radius: 1vh;
+    padding: 0.25em;
+    font-size: small;
+    margin: 1em;
+}
+
+.Footer {
+    font-size: x-small;
+    padding: 1em;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-1 {
+    margin: 0.5em;
+}
+
+.Sign {
+    color: aliceblue;
+}
+
+.Slogan {
+    color: darkslategrey;
+}
+
+.Slogan-strong {
+    font-size: small;
+    font-weight: 800;
+    color: darkslategrey;
+}
+
+.Feeling-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Questions-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95vw;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.Edit-image {
+    background-color: darkslategrey;
+    padding: 0.5em;
+    border-radius: 10vh;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.Options-container {
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.Mood-text {
+    color: white;
+    font-weight: 700;
+}
+
+.Wrong-mood-text {
+    color: white;
+    font-weight: 700;
+}
+
+.Reselect-mood-container {
+    background-color: darkslategrey;
+    margin: 0.25em;
+    border-radius: 2vh;
+}
+
+.Company-icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.Company-name {
+    color: white;
+    margin: 0.5em;
+}
+
+.Questions-progress-bar {
+    width: 95vw;
+    margin: 1em;
+}
+
+.Question-container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+}
+
+.Question-category {
+    font-weight: 500;
+    color: cornflowerblue;
+}
+
+.Question-number {
+    font-weight: 700;
+    font-size: small;
+    color: darkgray;
+}
+
+.Question-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.Range-question-label {
+    font-size: xx-large;
+    font-weight: 500;
+    color: dimgray;
+}
+
+.Range-question-stars-container {
+    width: 95% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 50vw;
+    border-style: solid;
+    border-color: darkgray;
+    background-color: lightgray;
+}
+
+.Star-container {
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    width: 4vw;
+    height: 4vw;
+}
+
+.Star-container-checked {
+    background-color: darkslategrey;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    width: 4vw;
+    height: 4vw;
+}
+
+.Star-container:hover {
+    background-color: darkslategrey;
+    cursor: pointer;
+}
+
+.Star {
+    color: aqua;
+    width: 60%;
+    height: 60%;
+}
+
+.Send-questions-button {
+    margin: 1em;
+    font-weight: 600 !important;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.Feedback-container {
+    margin-bottom: 1em;
+}
+
+.Progress-bar-container {
+    position: fixed;
+    width: 100%;
+    background-color: darkslategrey;
+    height: 40px;
+    top: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Comment-text-box {
+    width: 95% !important;
+    height: 100% !important;
+    resize: none;
+    margin-bottom: 1em;
+}
+
+.Send-text {
+    margin: 0;
+    margin-right: 2em;
+}
+
+.Thank-you-title {
+    color: lightseagreen;
+    font-weight: 700;
+}
+
+.Done-icon {
+    font-size: 4em !important;
+    border-style: solid;
+    border-color: darkcyan;
+    border-radius: 100%;
+    padding: 0.25em;
+    color: darkcyan;
+}
+
+.Page-not-found-title {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 2em;
+}
