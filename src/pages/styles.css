@@ -186,7 +186,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 1em;
+    padding: 1em 1em 0;
 }
 
 .Question-category {
@@ -212,9 +212,10 @@
 }
 
 .Range-question-label {
-    font-size: xx-large;
+    font-size: 1.25em;
     font-weight: 500;
     color: dimgray;
+    margin: 0.25em;
 }
 
 .Range-question-stars-container {
@@ -316,4 +317,60 @@
     color: white;
     font-size: 2em;
     margin-bottom: 2em;
+}
+
+.Extra-feedback-container {
+    background-color: cadetblue;
+    color: white;
+    min-width: 300px;
+    width: 65vw;
+    height: 45vh;
+    min-height: 300px;
+    border-radius: 2vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+}
+
+.Extra-feedback-title {
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 50%;
+    margin: 0;
+}
+
+.Extra-feedback-seal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1em;
+    border-radius: 100%;
+    width: 25vw;
+    height: 25vw;
+    max-width: 8em;
+    max-height: 8em;
+    background-color: darkslategray;
+}
+
+.Extra-feedback-seal-text {
+    margin: 0;
+    font-weight: 600;
+}
+
+.Extra-feedback-container-header {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.Extra-feedback-text-box {
+    resize: none;
+    height: 100%;
 }

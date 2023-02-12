@@ -9,28 +9,36 @@ import EditIcon from '../assets/EditIcon.svg';
 
 function FeedbackContainer(props) {
 
+    const { updateMood, feedbackText } = props;
     const [showSelectMood, setShowSelectMood] = useState(false);
     const [feelingImage, setFeelingImage] = useState(props.feelingImage);
 
     const handleMoodClick = (event) => {
         event.preventDefault();
-        switch (event.target.id) {
+        const mood = event.target.id;
+        switch (mood) {
             case 'veryhappy':
+                updateMood(mood);
                 setFeelingImage(VeryHappy);
                 break;
             case 'veryunhappy':
+                updateMood(mood);
                 setFeelingImage(VeryUnhappy);
                 break;
             case 'happy':
+                updateMood(mood);
                 setFeelingImage(Happy);
                 break;
             case 'neutral':
+                updateMood(mood);
                 setFeelingImage(Neutral);
                 break;
             case 'unhappy':
+                updateMood(mood);
                 setFeelingImage(Unhappy);
                 break;
             default:
+                updateMood(mood);
                 setFeelingImage(Neutral);
                 break;
         }
@@ -61,7 +69,7 @@ function FeedbackContainer(props) {
                         <div className='Options-container'>
                             <Image className='Edit-image' id='editImage' onClick={handleEditClick} src={EditIcon}></Image>
                             <Image className='Chosen-image' id='feelingImage' src={feelingImage} />
-                            <p className='Mood-text'>Thank you for your feedback</p>
+                            <p className='Mood-text'>{feedbackText} Thank you for your feedback</p>
                         </div>
                         <p className='Alert'>Your answer will always remain anonymous</p>
                     </div>

@@ -1,7 +1,10 @@
 import { Image } from 'react-bootstrap';
 import Butterfly from '../assets/Butterfly.svg';
 
-function QuestionsHeader() {
+function QuestionsHeader(props) {
+
+    const { companyName } = props;
+
     return (
         <div className='Questions-header'>
             <div className='Company-icon-text'>
@@ -9,7 +12,7 @@ function QuestionsHeader() {
                 <p className='Sign m-0'>Butterfly</p>
             </div>
             <div className='Company-name'>
-                <p><b>TEST INC.</b></p>
+                <p><b>{companyName}</b></p>
             </div>
         </div>
     );
